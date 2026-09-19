@@ -955,3 +955,89 @@ body::before {
 
     box-shadow: 0 0 90px rgba(244,209,140,.5);
 }
+
+/*Cafe*/
+.cafe {
+    position: absolute;
+
+    left: 20%;
+    bottom: 22%;
+
+    width: 390px;
+    height: 300px;
+
+    background: #2b211a;
+
+    border: 1px solid rgba(238,230,215,.15);
+}
+
+.cafe-sign {
+    position: absolute;
+
+    left: 50%;
+    top: 20px;
+
+    transform: translateX(-50%);
+
+    padding: 7px 25px;
+
+    border: 1px solid var(--gold);
+
+    color: var(--gold);
+
+    font-family: var(--serif);
+    font-size: 22px;
+}
+
+.cafe-door {
+    position: absolute;
+
+    left: 50px;
+    bottom: 0;
+
+    width: 100px;
+    height: 170px;
+
+    background: #171310;
+
+    border: 1px solid rgba(238,230,215,.1);
+}
+
+.cafe-window {
+    position: absolute;
+
+    right: 45px;
+    bottom: 70px;
+
+    width: 150px;
+    height: 90px;
+
+    background:
+    repeating-linear-gradient(
+    90deg,
+    #7e674b 0 2px,
+    transparent 2px 45px
+    ),
+    #2c3b34;
+
+    border: 1px solid rgba(238,230,215,.2);
+}
+
+.awning {
+    position: absolute;
+
+    top: -30px;
+    left: -10px;
+
+    width: 410px;
+    height: 35px;
+
+    background:
+    repeating-linear-gradient(
+    90deg,
+    #b18b5c 0 55px,
+    #6e4936 55px 110px
+    );
+
+    clip-path: polygon(0 0,100% 0,96% 100%,4% 100%);
+}
