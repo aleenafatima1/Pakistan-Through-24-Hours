@@ -1213,3 +1213,239 @@ body::before {
 
     background: #171513;
 }
+
+/*Water tank*/
+.water-tank {
+    position: absolute;
+
+    left: 13%;
+    bottom: 17%;
+
+    width: 105px;
+    height: 75px;
+
+    border: 3px solid #181614;
+
+    border-radius: 50% 50% 8px 8px;
+}
+
+.water-tank::before {
+    content: "";
+
+    position: absolute;
+
+    left: 14px;
+    right: 14px;
+    top: -8px;
+
+    height: 12px;
+
+    background: #181614;
+
+    border-radius: 50%;
+}
+
+.water-tank div {
+    position: absolute;
+
+    width: 3px;
+    height: 80px;
+
+    left: 20px;
+    bottom: -75px;
+
+    background: #181614;
+
+    box-shadow: 58px 0 #181614;
+}
+
+/*Birds*/
+.bird {
+    position: absolute;
+
+    color: #171513;
+
+    font-size: 25px;
+
+    transform: rotate(-15deg);
+}
+
+.bird-one {
+    left: 35%;
+    top: 27%;
+}
+
+.bird-two {
+    left: 47%;
+    top: 22%;
+}
+
+/*15. 10 PM NIGHT SCENE*/
+.night-scene {
+    background:
+    radial-gradient(circle at 72% 30%, rgba(94,125,155,.18), transparent 22%),
+    linear-gradient(
+    180deg,
+    #08101d 0%,
+    #0d1827 50%,
+    #101313 75%,
+    #050606 100%
+    );
+}
+
+/*Moon*/
+.moon {
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    right: 17%;
+    top: 15%;
+
+    border-radius: 50%;
+
+    background: #e7e2cf;
+
+    box-shadow: 0 0 35px rgba(231,226,207,.18);
+}
+
+/*Night buildings*/
+.night-building {
+    position: absolute;
+
+    bottom: 20%;
+
+    background: #101514;
+
+    border: 1px solid rgba(238,230,215,.07);
+
+    padding: 18px 12px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+.night-building b {
+    width: 9px;
+    height: 7px;
+
+    background: rgba(197,166,108,.55);
+
+    box-shadow: 0 0 6px rgba(197,166,108,.18);
+}
+
+.nb-one {
+    left: 7%;
+    width: 145px;
+    height: 45%;
+}
+
+.nb-two {
+    left: 37%;
+    width: 185px;
+    height: 62%;
+}
+
+.nb-three {
+    right: 7%;
+    width: 150px;
+    height: 52%;
+}
+
+/*Night road*/
+.night-road {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 25%;
+
+    background: #050707;
+
+    transform: perspective(400px) rotateX(12deg);
+    transform-origin: bottom;
+}
+
+.night-road span {
+    position: absolute;
+
+    width: 140px;
+    height: 3px;
+
+    background: #d9b97b;
+
+    box-shadow: 0 0 12px #d9b97b;
+
+    animation: roadMove 3s linear infinite;
+}
+
+.night-road span:nth-child(1) {
+    left: 20%;
+    top: 45%;
+}
+
+.night-road span:nth-child(2) {
+    left: 50%;
+    top: 58%;
+
+    animation-delay: 1s;
+}
+
+.night-road span:nth-child(3) {
+    left: 75%;
+    top: 38%;
+
+    animation-delay: 1.8s;
+}
+
+@keyframes roadMove {
+    50% {
+        opacity: .35;
+        transform: scaleX(.65);
+    }
+}
+
+/*City glow*/
+.city-glow {
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: rgba(197,166,108,.15);
+
+    box-shadow: 0 0 40px rgba(197,166,108,.18);
+
+    animation: glow 3s ease-in-out infinite;
+}
+
+.glow-one {
+    left: 15%;
+    top: 45%;
+}
+
+.glow-two {
+    left: 69%;
+    top: 50%;
+    animation-delay: 1s;
+}
+
+.glow-three {
+    right: 10%;
+    top: 60%;
+    animation-delay: 2s;
+}
+
+@keyframes glow {
+    50% {
+    opacity: .45;
+    transform: scale(1.3);
+    }
+}
