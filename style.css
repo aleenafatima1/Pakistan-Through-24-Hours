@@ -264,3 +264,287 @@ body::before {
 
     transform: translateY(-4px);
 }
+
+/*Scroll hint*/
+.scroll-hint {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 80px;
+
+    color: var(--muted);
+    font-size: 7px;
+    letter-spacing: 0.18em;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 35px;
+    background: var(--gold);
+}
+
+/*06-HERO CSS LANDSCAPE*/
+.hero-sky {
+    position: absolute;
+    inset: 0 0 0 45%;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+    180deg,
+    #101d1c 0%,
+    #315b51 45%,
+    #b17e55 76%,
+    #18130f 100%
+    );
+}
+
+/*Large sunrise*/
+.sun {
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: 25%;
+    top: 38%;
+
+    border-radius: 50%;
+
+    background: #e3bd7b;
+
+    box-shadow:
+    0 0 40px rgba(227, 189, 123, 0.45),
+    0 0 110px rgba(227, 189, 123, 0.25);
+}
+
+/*Mountain shapes*/
+.mountain {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 45%;
+
+    background: #16201d;
+
+    clip-path: polygon(
+    0 100%,
+    18% 55%,
+    29% 72%,
+    46% 30%,
+    61% 66%,
+    75% 40%,
+    100% 70%,
+    100% 100%
+    );
+}
+
+.mountain-one {
+    opacity: 0.75;
+}
+
+.mountain-two {
+    height: 32%;
+    background: #0c100f;
+
+    transform: scaleX(1.1);
+}
+
+/*07-MOSQUE CSS ILLUSTRATION*/
+.mosque {
+    position: absolute;
+    bottom: 0;
+
+    width: 300px;
+    height: 180px;
+}
+
+/*Mosque body*/
+.mosque-body {
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+
+    width: 230px;
+    height: 105px;
+
+    background: #111412;
+
+    border-radius: 4px 4px 0 0;
+}
+
+/*Dome*/
+.mosque-dome {
+    position: absolute;
+    left: 78px;
+    bottom: 88px;
+
+    width: 145px;
+    height: 75px;
+
+    background: #111412;
+
+    border-radius: 100px 100px 0 0;
+}
+
+/*Minarets*/
+.minaret {
+    position: absolute;
+    bottom: 0;
+
+    width: 18px;
+    height: 150px;
+
+    background: #101311;
+}
+
+.minaret::before {
+    content: "";
+
+    position: absolute;
+    top: -18px;
+    left: -7px;
+
+    width: 32px;
+    height: 22px;
+
+    background: #101311;
+
+    border-radius: 50% 50% 0 0;
+}
+
+.minaret::after {
+    content: "";
+
+    position: absolute;
+    top: -32px;
+    left: 6px;
+
+    width: 5px;
+    height: 20px;
+
+    background: #101311;
+}
+
+.minaret.left {
+    left: 15px;
+}
+
+.minaret.right {
+    right: 15px;
+}
+
+/*Hero mosque position*/
+.mosque-hero {
+    right: 10%;
+    bottom: 0;
+
+    transform: scale(1.2);
+    transform-origin: bottom;
+}
+
+/*08-INTRODUCTION SECTION*/
+.intro-section {
+    position: relative;
+
+    padding: 150px 8vw;
+
+    border-top: 1px solid var(--line);
+
+    background:
+    radial-gradient(circle at 75% 20%, rgba(197,166,108,.06), transparent 25%),
+    var(--black);
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10vw;
+
+    margin-top: 55px;
+}
+
+.intro-section h2 {
+    font-family: var(--serif);
+    font-size: clamp(55px, 7vw, 95px);
+    font-weight: 500;
+    line-height: 0.85;
+
+    letter-spacing: -0.04em;
+}
+
+.intro-section h2 em {
+    font-weight: 400;
+}
+
+.intro-copy {
+    max-width: 520px;
+}
+
+.big-copy {
+    color: var(--cream);
+
+    font-family: var(--serif);
+    font-size: 30px;
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.intro-copy > p:not(.big-copy) {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.small-note {
+    color: var(--gold) !important;
+
+    margin-top: 35px;
+
+    font-size: 9px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+/*09-TIME SECTIONS*/
+.time-section {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    position: relative;
+
+    border-top: 1px solid var(--line);
+
+    overflow: hidden;
+}
+
+/*Text side*/
+.time-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 100px 5vw 100px 8vw;
+
+    position: relative;
+    z-index: 5;
+}
+
+/*Huge time number*/
+.time-number {
+    font-family: var(--sans);
+    font-size: clamp(80px, 10vw, 150px);
+
+    line-height: 0.7;
+
+    letter-spacing: -0.06em;
+
+    margin-bottom: 35px;
+}
