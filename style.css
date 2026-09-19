@@ -1630,3 +1630,117 @@ body::before {
     grid-column: 1 / -1;
 }
 }
+
+/*19-RESPONSIVE MOBILE*/
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 25px 60px;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .hero-number {
+        font-size: 280px;
+    }
+
+    .hero-sky {
+        opacity: .3;
+    }
+
+    .scroll-hint {
+        margin-top: 55px;
+    }
+
+    .intro-section {
+        padding: 100px 25px;
+    }
+
+    .intro-section h2 {
+        font-size: 60px;
+    }
+
+    .time-info {
+        padding: 100px 25px 70px;
+        min-height: 78vh;
+    }
+
+    .time-number {
+        font-size: 90px;
+    }
+
+    .time-info h2 {
+        font-size: 60px;
+    }
+
+    .scene {
+        min-height: 70vh;
+    }
+
+    .scene-caption {
+        left: 20px;
+        right: 20px;
+    }
+
+    .cafe {
+        left: 10%;
+        width: 80%;
+        transform: scale(.8);
+        transform-origin: bottom left;
+    }
+
+    .building-a {
+        left: 2%;
+    }
+
+    .building-b {
+        left: 34%;
+    }
+
+    .building-c {
+        right: 2%;
+    }
+
+    .closing-section {
+        min-height: 75vh;
+    }
+
+    .closing-section h2 {
+        font-size: 62px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 40px 25px 25px;
+    }
+
+    .footer-year {
+        grid-column: auto;
+    }
+}
+
+/*20-ACCESSIBILITY Respect users who prefer reduced motion.*/
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
