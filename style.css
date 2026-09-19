@@ -548,3 +548,159 @@ body::before {
 
     margin-bottom: 35px;
 }
+
+.time-number span {
+    font-size: 0.42em;
+    color: var(--gold);
+    letter-spacing: 0;
+}
+
+/*Time label*/
+.time-label {
+    color: var(--gold);
+
+    font-size: 8px;
+    letter-spacing: 0.18em;
+
+    margin-bottom: 22px;
+}
+
+/*Time heading*/
+.time-info h2 {
+    font-family: var(--serif);
+    font-size: clamp(50px, 5vw, 78px);
+    line-height: 0.82;
+    font-weight: 500;
+
+    letter-spacing: -0.04em;
+
+    margin-bottom: 30px;
+}
+
+.time-info h2 em {
+    font-weight: 400;
+}
+
+/*Description*/
+.time-description {
+    max-width: 390px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/*Small moment tags*/
+.moment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-top: 35px;
+}
+
+.moment-list span {
+    border: 1px solid var(--line);
+
+    padding: 7px 9px;
+
+    color: var(--muted);
+
+    font-size: 7px;
+    letter-spacing: 0.12em;
+}
+
+/*10-GENERIC SCENE*/
+.scene {
+    position: relative;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+/*Caption at bottom of each scene*/
+.scene-caption {
+    position: absolute;
+
+    left: 35px;
+    right: 35px;
+    bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: rgba(238, 230, 215, 0.65);
+
+    font-size: 7px;
+    letter-spacing: 0.16em;
+
+    z-index: 10;
+}
+
+/*11-MORNING SCENE*/
+.morning-scene {
+    background:
+    linear-gradient(
+    180deg,
+    #102522 0%,
+    #477d69 43%,
+    #b98a61 72%,
+    #201711 100%
+    );
+}
+
+/*Morning sun*/
+.morning-sun {
+    position: absolute;
+
+    width: 125px;
+    height: 125px;
+
+    left: 44%;
+    top: 32%;
+
+    border-radius: 50%;
+
+    background: #f0ca82;
+
+    box-shadow: 0 0 80px rgba(240,202,130,.4);
+}
+
+/*Mountains*/
+.scene-mountains {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 47%;
+
+    background: #1d2d28;
+
+    clip-path: polygon(
+    0 100%,
+    10% 66%,
+    21% 79%,
+    36% 38%,
+    47% 62%,
+    62% 32%,
+    78% 69%,
+    88% 47%,
+    100% 72%,
+    100% 100%
+    );
+}
+
+/*Morning mosque*/
+.scene-mosque {
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%) scale(.9);
+
+    opacity: .9;
+}
