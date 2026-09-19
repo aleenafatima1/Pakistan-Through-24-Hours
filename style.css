@@ -1041,3 +1041,175 @@ body::before {
 
     clip-path: polygon(0 0,100% 0,96% 100%,4% 100%);
 }
+
+/*Cafe furniture*/
+.cafe-table {
+    position: absolute;
+
+    left: 63%;
+    bottom: 19%;
+
+    width: 125px;
+    height: 18px;
+
+    background: #241a15;
+
+    border-radius: 50%;
+}
+
+.cafe-table::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 15px;
+
+    width: 5px;
+    height: 80px;
+
+    background: #201712;
+}
+
+.chair {
+    position: absolute;
+
+    bottom: 18%;
+
+    width: 45px;
+    height: 55px;
+
+    border: 4px solid #241a15;
+}
+
+.chair-one {
+    left: 59%;
+}
+
+.chair-two {
+    left: 77%;
+}
+
+/*Heat waves*/
+.heat-wave {
+    position: absolute;
+
+    width: 120px;
+    height: 50px;
+
+    border-top: 2px solid rgba(238,230,215,.18);
+
+    border-radius: 50%;
+
+    animation: heat 2.5s ease-in-out infinite;
+}
+
+.wave-one {
+    left: 10%;
+    top: 35%;
+}
+
+.wave-two {
+    right: 12%;
+    top: 48%;
+
+    animation-delay: .8s;
+}
+
+@keyframes heat {
+    50% {
+    transform: translateY(-12px) scaleX(1.15);
+    opacity: .3;
+    }
+}
+
+/*14. 06 PM SUNSET SCENE*/
+.sunset-scene {
+    background:
+    linear-gradient(
+    180deg,
+    #33483f 0%,
+    #9a624b 45%,
+    #d28b5b 64%,
+    #241814 100%
+    );
+}
+
+/*Setting sun*/
+.setting-sun {
+    position: absolute;
+
+    width: 155px;
+    height: 155px;
+
+    left: 42%;
+    top: 47%;
+
+    border-radius: 50%;
+
+    background: #e8a965;
+
+    box-shadow:
+    0 0 50px rgba(232,169,101,.6),
+    0 0 120px rgba(232,169,101,.25);
+}
+
+/*Sunset mountains*/
+.sunset-mountains {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    clip-path: polygon(
+    0 100%,
+    18% 54%,
+    30% 68%,
+    48% 35%,
+    62% 66%,
+    78% 45%,
+    100% 72%,
+    100% 100%
+    );
+}
+
+.mountain-back {
+    height: 48%;
+    background: #46352c;
+}
+
+.mountain-front {
+    height: 33%;
+    background: #181512;
+}
+
+/*Minaret at sunset*/
+.sunset-minaret {
+    position: absolute;
+
+    left: 62%;
+    bottom: 28%;
+
+    width: 13px;
+    height: 270px;
+
+    background: #171513;
+}
+
+.sunset-minaret::before {
+    content: "";
+
+    position: absolute;
+
+    top: -17px;
+    left: -8px;
+
+    width: 29px;
+    height: 20px;
+
+    border-radius: 50% 50% 0 0;
+
+    background: #171513;
+}
